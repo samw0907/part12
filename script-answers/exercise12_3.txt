@@ -1,0 +1,70 @@
+Script started on 2025-01-10 15:57:21+02:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="133" LINES="17"]
+0;samw0907@DESKTOP-DUHIN85:H/mnt/c/Users/swill/Desktop/HelsinkilUniversityeProjects/part12/part12-containers-applicationssamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/HelsinkilUniversityeProjects/part12/part12-containers-applications$tdockerdcontainertlsn-a ls -a
+CONTAINER ID   IMAGE	     COMMAND	CREATED		     STATUS			     PORTS     NAMES
+581d9d907eb3   ubuntu	     "bash"	About a minute ago   Exited (0) About a minute ago	       stoic_wozniak
+8260f69d6c14   ubuntu	     "bash"	23 minutes ago	     Exited (0) 3 minutes ago		       priceless_kirch
+b9e59954dcb4   ubuntu	     "bash"	About an hour ago    Exited (0) 53 minutes ago		       priceless_morse
+7a9d30bc33f7   ubuntu	     "bash"	2 hours ago	     Exited (0) 2 hours ago		       sharp_poitras
+e8fcb0753807   ubuntu	     "bash"	2 hours ago	     Exited (1) 2 hours ago		       recursing_goldwasser
+9acb8d8bc76f   ubuntu	     "bash"	2 hours ago	     Exited (0) 2 hours ago		       busy_booth
+ddf44d3db084   ubuntu	     "bash"	2 hours ago	     Exited (0) 2 hours ago		       ecstatic_franklin
+c9093fef977d   ubuntu	     "bash"	8 days ago	     Exited (0) 8 days ago		       nice_mclean
+cad2e43f6fbf   ubuntu	     "bash"	8 days ago	     Exited (0) 8 days ago		       gifted_germain
+5e3bf334d0c4   ubuntu	     "bash"	8 days ago	     Exited (0) 8 days ago		       busy_visvesvaraya
+201cfe667e1f   ubuntu	     "bash"	8 days ago	     Exited (0) 8 days ago		       quirky_proskuriakova
+bbf3f23d4831   ubuntu	     "bash"	8 days ago	     Exited (0) 8 days ago		       sleepy_mcnulty
+217c947209fc   ubuntu	     "bash"	8 days ago	     Exited (0) 8 days ago		       jovial_chandrasekhar
+2081f0f0cd46   ubuntu	     "bash"	8 days ago	     Exited (0) 8 days ago		       ecstatic_einstein
+78dd5997c57e   hello-world   "/hello"	8 days ago	     Exited (0) 8 days ago		       sleepy_sanderson
+stoic_wozniakiak@DESKTOP-DUHIN85: /mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applicationssamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications$ docker start
+?2004h0;root@581d9d907eb3: /root@581d9d907eb3:/# apt-get update
+Get:1ohttp://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3ahttp://security.ubuntu.com/ubuntuRnoble-security/multiverse amd64 Packages [15.5 kB]
+Get:4ahttp://archive.ubuntu.com/ubuntuhnoble-updatestInReleasee[126skB]
+Get:5ahttp://security.ubuntu.com/ubuntuinoble-security/restricted amd64 Packages [722 kB]
+Get:6ahttp://archive.ubuntu.com/ubuntu7noble-backports]InRelease [126 kB]
+Get:7Whttp://archive.ubuntu.com/ubuntu1noble/mainkamd64]Packages][1808 kB]
+Get:87http://security.ubuntu.com/ubuntuinoble-security/universe%amd64 Packages [1035 kB]
+Get:97http://security.ubuntu.com/ubuntuinoble-security/main[amd64%Packages1[7370kB]kB 0%]
+Get:10 http://archive.ubuntu.com/ubuntu1noble/multiverse4amd64PPackages1[331kkB]37 kB 2%]
+Get:110http://archive.ubuntu.com/ubuntu noble/restricted%amd64 Packages [117 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:13ohttp://archive.ubuntu.com/ubuntusnoble-updates/universe amd64 Packages [1263 kB]
+Get:142http://archive.ubuntu.com/ubunturnoble-updates/main%amd64 Packages [979 kB]
+Get:152http://archive.ubuntu.com/ubunturnoble-updates/restricted amd64 Packages [737 kB]
+Get:162http://archive.ubuntu.com/ubunturnoble-updates/multiverse amd64 Packages [19.7 kB]
+Get:172http://archive.ubuntu.com/ubuntusnoble-backports/universe amd64 Packages [11.9 kB]
+Fetchedo27.7gMBsint4se(6452 kB/s)ackages 6647 B/11.9 kB 56%]
+Reading package lists... Done
+?2004h0;root@581d9d907eb3: /root@581d9d907eb3:/# apt-get -y install nano
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 282 kB of archives.
+After this operation, 856 kB of additional disk space will be used.
+Get:1ohttp://archive.ubuntu.com/ubuntu noble-updates/main amd64 nano amd64 7.2-2ubuntu0.1 [282 kB]
+Fetchedo282nkB6inB1s8(3804kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... 4379 files and directories currently installed.)
+Preparing to unpack .../nano_7.2-2ubuntu0.1_amd64.deb ...
+Unpacking nano (7.2-2ubuntu0.1) ...
+Setting up nano (7.2-2ubuntu0.1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doesn't exist
+?2004h0;root@581d9d907eb3: /root@581d9d907eb3:/# nano /usr/src/app/index.js
+?1l?2004l?2004h0;root@581d9d907eb3:n/root@581d9d907eb3:/#-catW/usr/src/app/index.jsteM1dlineF]BB^OBSWriteBOutepenB^WBBWheresIs	   B^KB CutB^TB Execute	     B^CB Location     BM-UB Undo BM-AB Set MarkBXB Exit  B^RB Read File    B^\B Replace      B^UB PasteB^JB Justify	  B^/B Go To Line   BM-EB Redo BM-6B Copy?12l?25h?25l
+root@581d9d907eb3:/# cat /usr/src/app/index.js
+
+console.log('Hello World')
+?2004h0;root@581d9d907eb3: /root@581d9d907eb3:/# exit
+exit4l
+?2004h0;

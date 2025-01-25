@@ -1,0 +1,7 @@
+Script started on 2025-01-10 15:55:44+02:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="133" LINES="17"]
+0;samw0907@DESKTOP-DUHIN85:H/mnt/c/Users/swill/Desktop/HelsinkilUniversityeProjects/part12/part12-containers-applicationssamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/HelsinkilUniversityeProjects/part12/part12-containers-applications$tdockerdrune-ituubuntuubashu bash
+?2004h0;root@581d9d907eb3: /root@581d9d907eb3:/# mkdir -p /usr/src/app
+?2004h0;root@581d9d907eb3: /root@581d9d907eb3:/# touch /usr/src/app/index.js
+?2004h0;root@581d9d907eb3: /root@581d9d907eb3:/# exit
+exit4l
+0;samw0907@DESKTOP-DUHIN85:H/mnt/c/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applicationssamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications$ sed -i 's/\x1b\[[0-9;]*[a-zA-Z]//g' script-answers/exercise12_2.txt

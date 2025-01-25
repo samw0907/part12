@@ -1,0 +1,62 @@
+Script started on 2025-01-16 13:48:52+02:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="145" LINES="18"]
+?2004h0;samw0907@DESKTOP-DUHIN85: /mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backendsamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backend$ docker exec -it todo-backend-redis-1 redis-cli
+docker exec -it todo-backend-redis-1 redis-cli
+
+127.0.0.1:6379> KEYS *
+(error) NOAUTH Authentication required.
+127.0.0.1:6379> AUTH examplepassword
+OK
+127.0.0.1:6379>
+127.0.0.1:6379> KEYS *
+1) "added_todos"
+127.0.0.1:6379>
+127.0.0.1:6379> GET added_todos
+"1"
+127.0.0.1:6379>
+127.0.0.1:6379> SET added_todos 9001
+OK
+127.0.0.1:6379>
+127.0.0.1:6379> GET added_todos
+"9001"
+127.0.0.1:6379>
+127.0.0.1:6379> curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"text": "Another task"}'
+(error) ERR unknown command 'curl', with args beginning with: '-X' 'POST' 'http://localhost:3000/todos' '-H' 'Content-Type: application/json' '-d' '{"text": "Another task"}'
+127.0.0.1:6379> exit
+?2004h0;samw0907@DESKTOP-DUHIN85: /mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backendsamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backend$ curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"text": "Another task"}'
+curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"text": "Another task"}'
+
+curl:l(7) Failed to connect to localhost port 3000 after 3 ms: Couldn't connect to server
+?2004h0;samw0907@DESKTOP-DUHIN85: /mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backendsamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backend$ curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"text": "Another task"}'
+curl -X POST http://localhost:3000/todos -H "Content-Type: application/json" -d '{"text": "Another task"}'
+
+curl:l(7) Failed to connect to localhost port 3000 after 2 ms: Couldn't connect to server
+?2004h0;samw0907@DESKTOP-DUHIN85: /mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backendsamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backend$ GET added_todos
+GET added_todos
+
+Command 'GET' not found, but can be installed with:
+sudo apt install libwww-perl
+0;samw0907@DESKTOP-DUHIN85:H/mnt/c/Users/swill/Desktop/HelsinkilUniversityeProjects/part12/part12-containers-applications/todo-app/todo-backendsamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/HelsinkilUniversityeProjects/part12/part12-containers-applications/todo-app/todo-backend$cdockerdexecr-itetodo-backend-redis-1eredis-cliis-cli
+127.0.0.1:6379> GET added_todos
+(error) NOAUTH Authentication required.
+127.0.0.1:6379>
+127.0.0.1:6379> AUTH examplepassword
+OK
+127.0.0.1:6379>
+127.0.0.1:6379> GET added_todos
+"9002"
+127.0.0.1:6379>
+127.0.0.1:6379> DEL added_todos
+(integer) 1
+127.0.0.1:6379>
+127.0.0.1:6379> GET added_todos
+(nil)
+127.0.0.1:6379>
+127.0.0.1:6379> GET added_todos
+"1"
+127.0.0.1:6379>
+127.0.0.1:6379> exit
+?2004h0;samw0907@DESKTOP-DUHIN85: /mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backendsamw0907@DESKTOP-DUHIN85:/mnt/c/Users/swill/Desktop/Helsinki University Projects/part12/part12-containers-applications/todo-app/todo-backend$ exo
+ti
+exit4l
+
+Script done on 2025-01-16 14:02:05+02:00 [COMMAND_EXIT_CODE="0"]

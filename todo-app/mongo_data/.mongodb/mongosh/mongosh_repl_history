@@ -1,0 +1,9 @@
+exit
+show collections
+db.todos.insertOne({ text: "First Todo", done: false })
+show collections
+use the_database
+show dbs
+exit
+show dbs
+show collections
